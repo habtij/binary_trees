@@ -19,7 +19,7 @@ if (parent == NULL)
 return (NULL);
 }
 
-new = binary_tree_ndoe(parent, value);
+new = binary_tree_node(parent, value);
 if (new == NULL)
 {
 return (NULL);
@@ -27,7 +27,7 @@ return (NULL);
 
 if (parent->left != NULL)
 {
-new-left = parent->left;
+new->left = parent->left;
 parent->left->parent = new;
 }
 parent->left = new;
